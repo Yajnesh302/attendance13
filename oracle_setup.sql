@@ -665,6 +665,11 @@ INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('CovSignat
 INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('CovDesignation', 'TO C');
 INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('CovAuthority', 'For GD, {Division}');
 INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('CovRecipient', 'To, ' || CHR(13) || CHR(10) || 'D-FMM/Purchase');
+INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('WagesHdrContract', 'Contract No. <b>{ContractNo}</b> Dt. <b>{ContractDate}</b> {ExtraCode}');
+INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('WagesHdrCategory', 'Manpower Outstanding Services - Data Entry Operators({CategoryDesc}) - {PeopleCount} No.s');
+INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('WagesHdrPeriod', 'Contract Period <b>{Period}</b>');
+INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('WagesHdrVendor', 'M/s {VendorName}, {VendorAddress}');
+INSERT INTO CertificateTemplates (TemplateKey, TemplateValue) VALUES ('WagesHdrPayment', 'Payment for the period <b>{PaymentStart}</b> to <b>{PaymentEnd}</b> - <b>{WorkingDays} days</b>');
 
 -- =============================================================================
 -- SECTION 5: GRANTS (allow SYSTEM schema to query hrdata tables)
